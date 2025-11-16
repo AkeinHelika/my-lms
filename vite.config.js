@@ -4,7 +4,7 @@ import { resolve } from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "./", // add this line
+  base: "./", // ensures assets load correctly on Vercel
   build: {
     rollupOptions: {
       input: resolve(__dirname, "public/index.html"),
